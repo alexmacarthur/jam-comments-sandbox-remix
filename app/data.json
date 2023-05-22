@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "slug": "json-server",
+      "title": "JSON Server",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc nisl aliquet nunc, vitae aliquam n"
+    },
+    {
+      "slug": "json-server2",
+      "title": "JSON Server2",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc nisl aliquet nunc, vitae aliquam n"
+    },
+    {
+      "slug": "json-server3",
+      "title": "JSON Server3",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget ultricies aliquam, nunc nisl aliquet nunc, vitae aliquam n"
+    }
+  ]
+}
