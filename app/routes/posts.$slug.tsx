@@ -7,9 +7,11 @@ export const loader = async ({ params }) => {
   const post = posts.find((post) => post.slug === params.slug);
 
   const markup = await fetchMarkup({
-    domain: process.env.JAM_COMMENTS_DOMAIN,
-    apiKey: process.env.JAM_COMMENTS_API_KEY,
+    domain: process.env.JAM_COMMENTS_DOMAIN as string,
+    apiKey: process.env.JAM_COMMENTS_API_KEY as string,
     path: `/posts/${params.slug}`,
+    environment: process.env.NODE_ENV,
+    tz: "Africa/Casablanca",
   });
 
   return json({ post, markup });

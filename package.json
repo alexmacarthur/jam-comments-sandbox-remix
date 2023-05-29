@@ -8,7 +8,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@jam-comments/remix": "^0.0.7",
+    "@jam-comments/remix": "^0.2.0",
     "@netlify/functions": "^1.4.0",
     "@remix-run/css-bundle": "^1.16.1",
     "@remix-run/netlify": "^1.16.1",
