@@ -1,6 +1,6 @@
 import { posts } from "../data.json";
 import { json } from "@remix-run/node";
-import { useLoaderData } from "@remix-run/react"
+import { useLoaderData } from "@remix-run/react";
 import { JamComments, fetchMarkup } from "@jam-comments/remix";
 
 export const loader = async ({ params }) => {
@@ -15,23 +15,23 @@ export const loader = async ({ params }) => {
   });
 
   return json({ post, markup });
-}
+};
 
 export default function Post() {
   const { post, markup } = useLoaderData();
 
   return (
     <div>
-      <h1 className="text-4xl text-center mb-4">{ post.title }</h1>
+      <h1 className="text-4xl text-center mb-4">{post.title}</h1>
 
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        voluptatum, voluptate, quibusdam, quia voluptas quod quos
-        exercitationem voluptatem quas quidem doloribus. Quisquam, quia
-        voluptas. Quisquam, quia voluptas.
+        voluptatum, voluptate, quibusdam, quia voluptas quod quos exercitationem
+        voluptatem quas quidem doloribus. Quisquam, quia voluptas. Quisquam,
+        quia voluptas.
       </p>
 
       <JamComments markup={markup} />
     </div>
-  )
+  );
 }
