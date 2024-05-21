@@ -1,15 +1,22 @@
 import { posts } from "../data.json";
 import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
-import { JamComments, fetchMarkup } from "@jam-comments/remix";
+import { JamComments } from "@jam-comments/remix";
+import { fetchMarkup } from "@jam-comments/remix/server";
 
 export const loader = async ({ params }) => {
   const post = posts.find((post) => post.slug === params.slug);
+
+  const blogPostingSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+  };
 
   const markup = await fetchMarkup({
     domain: process.env.JAM_COMMENTS_DOMAIN as string,
     apiKey: process.env.JAM_COMMENTS_API_KEY as string,
     path: `/posts/${params.slug}`,
+    schema: blogPostingSchema,
     environment: process.env.NODE_ENV,
     tz: "Africa/Casablanca",
   });
@@ -18,7 +25,7 @@ export const loader = async ({ params }) => {
 };
 
 export default function Post() {
-  const { post, markup } = useLoaderData();
+  const { post, markup } = useLoaderData() as any;
 
   return (
     <div>
