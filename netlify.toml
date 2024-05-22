@@ -1,9 +1,9 @@
 [build]
-  command = "remix build"
+  command = "remix vite:build"
   publish = "public"
 
 [dev]
-  command = "remix watch"
+  command = "remix vite:dev"
   port = 3000
 
 [functions]
