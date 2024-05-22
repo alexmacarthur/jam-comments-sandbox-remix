@@ -6,9 +6,6 @@
   command = "remix vite:dev"
   port = 3000
 
-[functions]
-  node_bundler = "esbuild"
-
 [[redirects]]
   from = "/*"
   to = "/.netlify/functions/server"
