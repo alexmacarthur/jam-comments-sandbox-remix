@@ -1,1 +1,1 @@
-export { fetchMarkup } from "@jam-comments/remix/server";
+// export { fetchMarkup } from "@jam-comments/remix/server";

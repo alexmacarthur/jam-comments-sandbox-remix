@@ -12,7 +12,7 @@
     "redirects:disable": "shx rm -f public/_redirects"
   },
   "dependencies": {
-    "@jam-comments/remix": "^2.0.2",
+    "@jam-comments/remix": "^2.0.3",
     "@netlify/functions": "^2.7.0",
     "@netlify/remix-adapter": "^2.3.2",
     "@remix-run/react": "^2.9.2",
