@@ -20,6 +20,9 @@ export const loader = async ({ params }) => {
     schema: blogPostingSchema,
     environment: process.env.NODE_ENV,
     tz: "Africa/Casablanca",
+    copy: {
+      commentPlaceholder: "Leave a comment!!!",
+    },
   });
 
   return json({ post, markup });
