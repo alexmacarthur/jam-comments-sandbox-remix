@@ -7,9 +7,9 @@ installGlobals();
 
 export default defineConfig({
   plugins: [remix(), tsconfigPaths()],
-  build: {
-    rollupOptions: {
-      external: ["@jam-comments/remix"],
-    },
-  },
+  // build: {
+  //   rollupOptions: {
+  //     external: ["@jam-comments/remix"],
+  //   },
+  // },
 });
