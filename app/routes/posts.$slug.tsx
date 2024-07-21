@@ -1,7 +1,7 @@
 import { posts } from "../data.json";
 import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
-import { JamComments } from "@jam-comments/remix";
+import JamComments from "@jam-comments/remix";
 // import { fetchMarkup } from "../comments.server";
 import { fetchMarkup } from "@jam-comments/remix/server";
 
