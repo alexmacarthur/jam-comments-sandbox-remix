@@ -7,7 +7,4 @@ installGlobals();
 
 export default defineConfig({
   plugins: [remix(), tsconfigPaths()],
-  ssr: {
-    external: ["@jam-comments/remix"],
-  },
 });
